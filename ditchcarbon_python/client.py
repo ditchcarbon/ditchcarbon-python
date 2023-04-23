@@ -12,6 +12,9 @@ from .resources.activities import Activities
 
 class Client:
     def __init__(self, token):
+        if not token or not isinstance(token, str):
+            raise ValueError("API token must be a non-empty string")
+
         self.base_url = BASE_URL
 
         self.session = requests.Session()

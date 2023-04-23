@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ditchcarbon-python"
+version = "0.1.0"
+description = "A Python wrapper for the DitchCarbon API"
+readme = "README.md"
+authors = [{ name = "DitchCarbon", email = "enquiries@ditchcarbon.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["ditchcarbon", "API", "wrapper"]
+dependencies = [
+    "requests",
+]
+requires-python = ">=3.7"
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.urls]
+Source = "https://github.com/ditchthis/ditchcarbon-python"
+Docs = "https://docs.ditchcarbon.com"
+DitchCarbon = "https://ditchcarbon.com"

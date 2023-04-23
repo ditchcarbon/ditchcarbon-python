@@ -6,3 +6,9 @@ __pycache__/
 # VSCode files
 .vscode/
 
+# Testing
+.pytest_cache/
+
+# Distribution / packaging
+dist/
+*.egg-info/
